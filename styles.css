@@ -1,43 +1,47 @@
-.wrapper{
-    min-height: 100vh;
-    display: flex;
+body{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    align-items:center;
+    background-color: grey;
+    /*These items below are added specifically for FireFox 
+    because it was giving me issues otherwise.*/
+    height: 100vh;
+    min-width:0;
+    margin: 0;
 }
-#login-box{
+/*The container for the actual login box*/
+#login-box{ 
     font-size: x-large;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     align-content: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Tahoma, sans-serif;
     overflow:hidden;
     box-shadow: 0px 0px 10px;
     gap: 50px;
     border-radius:15px;
     width: 55vw;
     height: 70vh;
-    min-width: 0;
-    min-height: 0;
     background-color: black;
+    
 }
-div{
-    min-width:0;
-    min-height: 0;
-}
-
+/*Title text*/
 h1{
     color: white;
+    min-width:0;
 }
-input{
+/*for the username and password fields*/
+.input_line{
     outline: 0;
     border-width: 0 0 2px;
     width: 250px;
-    min-height:0;
     background-color: black;
     color:white;
 }
+/*for the sign in button*/
 button{
     background-color: royalblue;
     color: black;
@@ -48,6 +52,6 @@ button{
     border-radius: 24px;
     font-size: 16px;
     cursor: pointer;
-    min-height:0;
+    
 }
 
